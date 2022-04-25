@@ -1,0 +1,83 @@
+@import 'variables';
+
+@mixin defaultValues {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin principal {
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+@mixin titleWeb {
+    color: $fontColorTitleWeb;
+    background-color: $bgColorTitleWeb;
+    font-size: $fontSizeTitleWeb;
+    border-radius: 5px; 
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: fit-content;
+    margin:auto;
+    margin-top:50px;
+}
+
+@mixin cardsContainers{
+    height: fit-content;
+    flex-direction: column;
+    background-color: $bgColorPrincipalContainer;
+    border-radius: 5px;
+    padding: 10px;
+    position:relative;
+    display:inline-block;
+    flex-grow: 1; 
+    margin:20px;
+}
+
+@mixin card {
+    margin:10px;
+    padding: 10px;
+    background-color: $bgColorCard;
+    cursor: pointer;
+
+}
+@mixin titleCard {
+    font-weight: $fontHeightBolder;
+}
+
+@mixin contentCard {
+    font-weight: $fontHeightNormal;
+}
+
+@mixin bgIconoColor($bgColor) {
+    background-color: $bgColor;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+@mixin exitButton {
+    display:inline-block;
+    background-color: red;
+    padding: 3px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    margin-left:90%;
+    margin-top:5px;
+}
+@mixin iconsTop {
+    padding: 6px;
+    border-radius: 50%; 
+}
+
+@mixin bgColor($bgColor) {
+    background-color:$bgColor;
+}
+@mixin cardHoverBg {
+    background-color: $bgColorCardHover;
+}
+@mixin cardsHoverX{
+    background-color: black;
+    color:white;
+}

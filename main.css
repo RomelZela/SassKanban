@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+}
+
+.titleWeb {
+  color: #fff;
+  background-color: rgba(107, 107, 216, 0.4784313725);
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.principal {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardsContainers {
+  height: fit-content;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5647058824);
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.titleTask, .titleCards {
+  font-weight: bolder;
+}
+
+.contentCard {
+  font-weight: normal;
+}
+
+.exitButton {
+  display: inline-block;
+  background-color: red;
+  padding: 3px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  margin-left: 90%;
+  margin-top: 5px;
+}
+
+.fa-desktop {
+  background-color: green;
+}
+
+.fa-box {
+  background-color: yellow;
+}
+
+.fa-mobile {
+  background-color: red;
+}
+
+.iconsTop {
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 255, 0.3137254902);
+}
+
+.card:hover > .exitButton {
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

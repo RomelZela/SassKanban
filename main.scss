@@ -1,0 +1,49 @@
+@import 'functions';
+
+body{
+    @include defaultValues;
+    background-image: url('https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+}
+.titleWeb{
+    @include titleWeb;
+}
+.principal{
+    @include principal;
+}
+
+.cardsContainers{
+
+    @include cardsContainers;
+}
+.card{
+    @include card;
+}
+
+.titleTask, .titleCards{
+    @include titleCard;
+}
+.contentCard{
+    @include contentCard;
+}
+.exitButton{
+    @include exitButton;
+}
+.fa-desktop{
+    @include bgColor(green);
+}
+.fa-box{
+    @include bgColor(yellow)
+}
+.fa-mobile{
+    @include bgColor(red);
+}
+.iconsTop{
+    @include iconsTop;
+}
+.card:hover{
+    @include cardHoverBg;
+}
+.card:hover > .exitButton{
+    @include cardsHoverX;
+}
